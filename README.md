@@ -32,5 +32,5 @@
   bootstrap: ^5.2.3,   
   express: ^4.18.2,   
   express-handlebars: ^6.0.7   
-  mongoose: ^7.0.0
+  mongoose: ^7.0.0  
   dotenv: ^16.0.3
