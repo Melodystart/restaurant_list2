@@ -2,11 +2,11 @@ README.md
 
 1. 功能描述 (features)：   
 
-．使用者可以新增一家餐廳
-．使用者可以瀏覽一家餐廳的詳細資訊
-．使用者可以瀏覽全部所有餐廳
-．使用者可以修改一家餐廳的資訊
-．使用者可以刪除一家餐廳   
+  使用者可以新增一家餐廳
+  使用者可以瀏覽一家餐廳的詳細資訊
+  使用者可以瀏覽全部所有餐廳
+  使用者可以修改一家餐廳的資訊
+  使用者可以刪除一家餐廳   
 
 2. 安裝與執行步驟 (installation and execution)：   
 
@@ -31,8 +31,8 @@ README.md
 
 3. 環境建置與需求 (prerequisites)：   
 
-．bootstrap: ^5.2.3,   
-．express: ^4.18.2,   
-．express-handlebars: ^6.0.7   
-．mongoose: ^7.0.0
-．dotenv: ^16.0.3
+  bootstrap: ^5.2.3,   
+  express: ^4.18.2,   
+  express-handlebars: ^6.0.7   
+  mongoose: ^7.0.0
+  dotenv: ^16.0.3
