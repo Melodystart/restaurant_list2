@@ -1,5 +1,3 @@
-README.md
-
 1. 功能描述 (features)：   
 
   使用者可以新增一家餐廳  
@@ -20,13 +18,13 @@ README.md
   npm i express-handlebars //安裝 handlebars   
   npm install dotenv --save //安裝 dotenv
 
-． 請自行新增.env檔案並將以下資訊儲存於檔案中
+． 請自行新增.env檔案並將以下資訊儲存於檔案中    
   MONGODB_URI= "您的MongoDB連線資訊"
 
-． 載入種子資料(執行程式指令)
+． 載入種子資料(執行程式指令)  
   npm run seed
 
-． 啟動伺服器  (執行程式指令)
+． 啟動伺服器  (執行程式指令)  
   nodemon app.js
 
 3. 環境建置與需求 (prerequisites)：   
