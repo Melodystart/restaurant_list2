@@ -23,6 +23,5 @@ db.on('error', () => {
 db.once('open', () => {
   console.log('running restaurantSeeder script...')
   Restaurant.create(restaurantList)
-  console.log('done')
-
+    .catch(error => console.log('create restaurantSeeder error!'))
 })

@@ -39,7 +39,7 @@ app.use(express.static('public'))
 app.get('/', (req, res) => {
   Restaurant.find()
     .lean() // 把 Mongoose 的 Model 物件轉換成乾淨的 JavaScript 資料陣列
-    .then(restaurants => res.render('index', { restaurants: restaurants }))
+    .then(restaurants => res.render('index', { restaurants }))
     .catch(error => console.log(error))
 })
 
@@ -60,7 +60,7 @@ app.get('/restaurants/:id', (req, res) => {
   const id = req.params.id
   Restaurant.findById(id)
     .lean()
-    .then(restaurant => res.render('show', { restaurant: restaurant }))
+    .then(restaurant => res.render('show', { restaurant }))
     .catch(error => console.log(error))
 })
 // 設定路由：搜尋餐廳關鍵字 or 餐廳類別
@@ -79,7 +79,7 @@ app.get('/search', (req, res) => {
         restaurants.filter(restaurant =>
           restaurant.name.toLowerCase().includes(keyword.toLowerCase().trim()) || restaurant.category.includes(keyword.trim()))
 
-      res.render('index', { restaurants: filterData, keyword: keyword })
+      res.render('index', { restaurants: filterData, keyword })
 
     })
 
@@ -90,7 +90,7 @@ app.get('/restaurants/:id/edit', (req, res) => {
   const id = req.params.id
   Restaurant.findById(id)
     .lean()
-    .then(restaurant => res.render('edit', { restaurant: restaurant }))
+    .then(restaurant => res.render('edit', { restaurant }))
     .catch(error => console.log(error))
 })
 
